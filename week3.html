@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Week 3 project</title>
+</head>
+<body>
+<p> ---------------------------------------------- </p>
+
+<p id="loopy"></p> 
+
+<script>
+
+let text = "";
+var i;
+for (i = 0; i <= 10; i++){
+	
+	if(i === 0){
+		
+		
+		text += "count " + [i] + " is even" + "<br>";
+		
+	}
+	else if (i % 2 === 0){
+		
+		
+		text += "count " + [i] + " is even" + "<br>";
+		
+	}
+	else {
+		
+		text += "count " + [i] + " is odd " + "<br>";
+		
+	}
+	
+}
+document.getElementById("loopy").innerHTML = text;
+</script>
+
+<p> ---------------------------------------------- </p>
+
+<p id ="picked"></p>
+
+<p> ---------------------------------------------- </p>
+
+<p id= "eachtest"></p>
+
+
+<script>
+let myNum = prompt("enter a number between 5 and 20");
+var txt = "";
+var count = 1;
+
+do{	
+	txt += "counting up to chosen number, the number is now: " + count + "<br>";
+	
+	count++;
+	
+}while(count <= myNum);
+	document.getElementById("picked").innerHTML = txt;
+	
+</script>
+
+<script>
+let textArray = "";
+const classes = ["Accounting" , "Algebra" , "Programming" , "Art" , "Data Analytics"];
+
+classes.forEach(myfunction);
+
+function myfunction(ivalue,index) {
+	textArray += ivalue + ", ";
+}
+
+document.getElementById("eachtest").innerHTML = textArray;
+</script>
+
+
+
+</body>
+</html>
